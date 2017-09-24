@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="assets/css/style.css">
+	<script
+  		src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="assets/javascript/game.js"></script> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	
+	<title></title>
+</head>
+<body>
+	<div class="container">
+			<div clas="jumbotron">
+				<h1 class="text-center" id="game"><strong>Star-Wars RPG Game!</strong></h1>
+			</div>
+			<div class="row text-center titles" id="characters"><h2>CHOOSE YOUR CHARACTER:</h2></div>
+			<div class="row text-center" style="margin: auto;">
+				<div class="col-md-3 border" style="width: 190px;" id="lukeDiv">
+					<div class="row text-center">
+						<div class="text-center name" style="width: 150px;" id="nameLuke">Luke Skywalker:</div>
+					</div>
+					<div class="row text-center">
+						<img class="character text-center" id="Luke Skywalker" src="assets/images/luke.png" style="height:100px; width:150px;">
+					</div>
+					<div class="row text-center">
+						<div>HP: 550,  AP: 15,  CAP: 70</div>
+					</div>
+				</div>
+				<div class="col-md-3 border text-center" style="width: 190px;" id="obiDiv">
+					<div class="row">
+						<div class="text-center name" style="width: 150px;" id="nameObi">Obi Wan:</div>
+					</div>
+					<div class="row text-center">
+						<img class="character text-center" id="Obi Wan" src="assets/images/obi.jpg" style="height:100px; width:150px;">
+					</div>
+					<div class="row text-center">
+						<div class="text-center">HP: 500,  AP: 20,  CAP: 85</div>
+					</div>
+				</div>
+				<div class="col-md-3 border text-center" style="width: 190px;" id="darthDiv">
+					<div class="row">
+						<div class="text-center name" style="width: 150px;" id="nameDarth">Darth Vader:</div>
+					</div>
+					<div class="row text-center">
+						<img class="character text-center" id="Darth Vader" src="assets/images/darthvader.jpg" style="height:100px; width:150px;">
+					</div>
+					<div class="row text-center">
+						<div>HP: 450,  AP: 25,  CAP: 90</div>
+					</div>
+				</div>
+				<div class="col-md-3 border text-center" style="width: 190px;" id="yodaDiv">
+					<div class="row">
+						<div class="text-center name" style="width: 150px;" id="nameYoda">Yoda:</div>
+					</div>
+					<div class="row text-center">
+						<img class="character text-center" id="Yoda" src="assets/images/yoda.jpg" style="height:100px; width:150px;">
+					</div>
+					<div class="row text-center">
+						<div>HP: 400,  AP: 30,  CAP: 95</div>
+					</div>
+				</div>
+			</div>
+		<div class="row titles text-center" id="fightSection" style="visibility: hidden;">
+			<div class="row titles text-center"><h2>Fight Section:</h2></div>
+			<div class="row text-center">
+					<button class="btn btn-warning" id="awesomeButton" style="visibility: hidden;">AWESOME, CHOOSE ANOTHER OPPONENT</button>
+				</div>
+			<div class="row">
+				<div class="col-md-3">
+					
+				</div>
+				<div class="col-md-3 border" style="width: 190px; visibility: hidden;" id="defender">
+						<div class="row text-center">
+							<div class="text-center name" style="width: 150px;" id="defenderName"></div>
+						</div>
+						<div class="row text-center">
+							<img class="character text-center" id="defenderImage" src="" style="height:100px; width:150px;">
+						</div>
+						<div class="row text-center">
+							<div id="defenderHealth"></div>
+						</div>
+				</div>
+				<div class="col-md-3" style="width: 65px;">
+					<div class="row" id="versus" style="margin-bottom: 25px; visibility:hidden;"><h1 ><strong>V.S</strong></h1></div>
+					<div class="row">
+						<button type="button" class="btn btn-warning" id="attackButton" style="visibility: hidden;">ATTACK!</button>
+					</div>
+				</div>
+				<div class="col-md-3 border" style="width: 190px; visibility: hidden;" id="fight">
+					<div class="row text-center">
+						<div class="text-center name" style="width: 150px;" id="fightName"></div>
+					</div>
+					<div class="row text-center">
+						<img class="character text-center" id="fightImage" src="" style="height:100px; width:150px;">
+					</div>
+					<div class="row text-center">
+						<div id="fightHealth"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

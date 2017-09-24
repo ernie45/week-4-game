@@ -1,0 +1,37 @@
+#game{
+	color: green;
+	background-color: gray;
+	width: 394px;
+	margin: auto;
+	margin-bottom: 0px;
+}
+body{
+	background-image: url("../images/battleground.jpg");
+}
+.border{
+	background-color: white;
+	border: dashed;
+	border-width: 10px;
+	border-color: red;
+	margin: 20px;
+	
+}
+.border2{
+	background-color: white;
+	border: dashed;
+	border-width: 5px;
+	border-color: red;
+	margin: 10px;
+}
+.choices{
+	text-align: center;
+	margin: auto;
+}
+.titles{
+	padding-left:50px;
+	color: brown;
+	font-weight: bold;
+}
+h2{
+	text-decoration: underline;
+}
